@@ -224,7 +224,7 @@ X_train[numeric_feature]
 ```
 
 
-> ## Modeling
+> ## Model Development
 > <p align="justify">
 Terdapat beberapa algoritma yang dapat diterapkan pada kasus regresi. Mengevaluasi performa masing-masing algoritma dan menentukan algoritma mana yang memberikan hasil prediksi terbaik adalah cara yang dapat kita lakukan sebagai solusi utama. Ketiga algoritma yang digunakan, antara lain: 
 </p>
@@ -272,7 +272,7 @@ models.loc['train_mse', 'Boosting'] = mean_squared_error(y_pred=boosting.predict
                                                          y_true=y_train)
 ```
 
->## Evaluation
+>## Evaluasi
 <p align="justify">
 Mengevaluasi model regresi sebenarnya relatif sederhana. Secara umum, hampir semua metrik adalah sama. Jika prediksi mendekati nilai sebenarnya, performanya baik. Sedangkan jika tidak, performanya buruk. Secara teknis, selisih antara nilai sebenarnya dan nilai prediksi disebut eror. Maka, semua metrik mengukur seberapa kecil nilai eror tersebut.
 </p>
@@ -332,12 +332,14 @@ pd.DataFrame(pred_dict)
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/predict-result.png?raw=true"/>
 </p>
 
+> ## Kesimpulan
 <p align="justify">
 Pengujian setiap model dengan algoritma yang berbeda menghasilkan nilai prediksi yang berbeda pula. Model dengan nilai yang mendekati nilai sebenarnya diperoleh pada prediksi dengan menggunakan algoritma K-Nearest Neighbor. Untuk prediksi menggunakan algoritma Random Forest dan Boosting, performanya masih dibawah prediksi model KNN. Sehingga dapat disimpulkan bahwa pada kasus ini, model dengan menggunakan Algoritma KNN lebih tepat untuk digunakan atau diterapkan.
 </p>
 
-
 > ## Penutup
+<p align="justify">
 Sekian hasil dari laporan proyek machine learning, predicitive analytics ini. Bilamana didalam penyampaian serta penjelasan yang kurang berkenaan, saya memohon maaf. Atas waktu dan perhatiannya, saya ucapkan Terima kasih telah membaca laporan ini. Semoga dapat memberi manfaat bagi kita semuanya.
+</p>
 
   

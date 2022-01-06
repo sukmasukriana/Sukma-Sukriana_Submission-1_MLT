@@ -181,16 +181,13 @@ Untuk data preparation, beberapa teknik yang diperlukan yaitu :
 
 - **Dimensionality Reduction :** Mengurangi fitur atau kolom yang banyak menjadi lebih sedikit dengan tetap mempertahankan informasi pada data tersebut. 
 
-Pada gambar dibawah ini, terjadi proses reduksi yang semula 11 fitur yang berkaitan menjadi 1 fitur bernama AMCATscore. 
-<p align="center">
-  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/reduct-dim.png?raw=true"/>
-</p>
-
 - ***Train Test Split*** : Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus kita lakukan sebelum membuat model. 
 
 - ***Standarisasi*** : Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses standarisasi dapat membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. 
 
-> ## Model Development
+- ***Scaling Data Test*** : kita perlu melakukan proses scaling fitur numerik pada data test/uji. Hal ini harus dilakukan agar skala antara data train dan data test sama dan kita bisa melakukan evaluasi. 
+
+> ## Modeling
 > <p align="justify">
 Terdapat beberapa algoritma yang dapat diterapkan pada kasus regresi. Mengevaluasi performa masing-masing algoritma dan menentukan algoritma mana yang memberikan hasil prediksi terbaik adalah cara yang dapat kita lakukan sebagai solusi utama. Ketiga algoritma yang digunakan, antara lain: 
 </p>
@@ -250,13 +247,6 @@ Metrik yang akan kita gunakan pada prediksi ini adalah MSE atau Mean Squared Err
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/mse.png?raw=true"/>
 </p>
-
-Sebelum menghitung nilai MSE dalam model, kita perlu melakukan proses scaling fitur numerik pada data test. Kita perlu melakukan scaling terhadap data uji. Hal ini harus dilakukan agar skala antara data train dan data test sama dan kita bisa melakukan evaluasi.
-Untuk proses scaling, dapat disesuaikan seperti contoh kode program: 
-
-```
-X_test.loc[:, numerik_fitur] = scaler.transform(X_test[numerik_fitur])
-```
 
 Setelah itu ketiga model bisa di evaluasi dengan metrik MSE. Penggunaan metrik MSE dapat disesuaikan seperti contoh kode program:
 

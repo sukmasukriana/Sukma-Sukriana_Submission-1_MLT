@@ -2,24 +2,27 @@
 
 > ## Domain Proyek
 <p align="justify">
-Teknik merupakan bidang yang mengkombinasikan ilmu dan teknologi untuk menyelesaikan suatu permasalahan. Ada banyak sekali ilmu teknik yang bisa kita pelajari, khususnya jika kita melanjutkan studi pada perguruan tinggi yang memiliki konsentrasi pada bidang ini. Beberapa di antaranya teknik fisika, teknik nuklir, teknik metalurgi, teknik perminyakan, teknik nuklir, teknik penerbangan, teknik perkapalan dan masih banyak lagi. Berbekal keilmuan yang telah diperoleh, pada umumnya penguasaan Ilmu Teknik menjadi nilai jual yang patut dibanggakan. Saat ini, lulusan Ilmu Teknik memiliki prospek kerja yang sangat luas,. Hampir seluruh sektor membutuhkan ahli teknik. Jenis dan jenjang karier yang ditawarkan cukup bervariasi. Gajinya pun sangat kompetitif dengan melihat kemampuan dan pengalaman yang dimiliki, area tempat bekerja, serta level yang dimasuki. [QuipperCampus](https://campus.quipper.com/majors/id-ilmu-teknik).
+Teknik merupakan bidang yang mengkombinasikan ilmu dan teknologi untuk menyelesaikan suatu permasalahan. Ada banyak sekali ilmu teknik yang bisa kita pelajari, khususnya jika kita melanjutkan studi pada perguruan tinggi yang memiliki konsentrasi pada bidang ini. Beberapa di antaranya teknik fisika, teknik nuklir, teknik metalurgi, teknik perminyakan, teknik nuklir, teknik penerbangan, teknik perkapalan dan masih banyak lagi. Berbekal keilmuan yang telah diperoleh, pada umumnya penguasaan Ilmu Teknik menjadi nilai jual yang patut dibanggakan. Saat ini, lulusan Ilmu Teknik memiliki prospek kerja yang sangat luas. Hampir seluruh sektor membutuhkan ahli teknik. Jenis dan jenjang karier yang ditawarkan cukup bervariasi. Gajinya pun sangat kompetitif dengan melihat kemampuan dan pengalaman yang dimiliki, area tempat bekerja, serta level yang dimasuki. [QuipperCampus](https://campus.quipper.com/majors/id-ilmu-teknik).
 </p>
 
 <p align="justify">
-Salah satu negara yang memiliki tingkat lulusan pada jurusan teknik tertinggi yaitu India. Negara India memiliki total 6.214 Institusi Teknik dan Teknologi dengan 2,9 juta siswa terdaftar. 1,5 juta siswa setiap tahunnya, mendapatkan gelar di bidang teknik. Kondisi ini tentunya akan memberi bonus demografi bagi negara tersebut. Keterampilan dan kemampuan dibidang teknik tentu harus menyesuaikan dengan pola adaptasi perubahan yang cepat. Namun hanya kurang dari 20 persen lulusan tersebut, memperoleh pekerjaan dibidang teknik disebabkan oleh kurangnya keterampilan yang dibutuhkan untuk melakukan pekerjaan teknis. [BWEDUCATION](http://bweducation.businessworld.in/article/Employability-Of-Engineering-Graduates-In-India-A-Challenge-Needs-To-Address/01-06-2019-171291). Berdasarkan uraian diatas, tentu perusahaan di India memerlukan sebuah strategi management keuangan yang tepat didalam memberikan upah/gaji/pendapatan bagi lulusan teknik di India. 
+Salah satu negara yang memiliki tingkat lulusan pada jurusan teknik tertinggi yaitu India. Negara India memiliki total 6.214 Institusi Teknik dan Teknologi dengan 2,9 juta siswa terdaftar. 1,5 juta siswa setiap tahunnya, mendapatkan gelar di bidang teknik. Kondisi ini tentunya akan memberi bonus demografi bagi negara tersebut. Keterampilan dan kemampuan dibidang teknik tentu harus menyesuaikan dengan pola adaptasi perubahan yang cepat. Namun hanya kurang dari 20 persen lulusan tersebut, memperoleh pekerjaan dibidang teknik disebabkan oleh kurangnya keterampilan yang dibutuhkan untuk melakukan pekerjaan teknis. [BWEDUCATION](http://bweducation.businessworld.in/article/Employability-Of-Engineering-Graduates-In-India-A-Challenge-Needs-To-Address/01-06-2019-171291).
 <p>
   
-<p align="justify"></p>
+<p align="justify">
+Selain itu, faktor upah/gaji/pendapatan memiliki pengaruh terhadap serapan lulusan teknik di India. Apabila terjadi ketidaksesuaian antara upah yang diterima dengan beban kerja yang dilakukan, maka kemungkinan besar bidang ini tidak memiliki daya tarik lebih, sekalipun Bidang teknologi dan Informasi yang akhir-akhir ini sedang berkembang pesat memberi dampak meningkatnya jumlah lapangan pekerjaan baru [timesofindia.indiatimes](https://timesofindia.indiatimes.com/city/kochi/58-of-engg-grads-get-starting-pay-of-only-around-rs-25k-per-mth/articleshow/69779328.cms). Oleh sebab itu peranan pihak penyedia lapangan pekerjaan didalam menetapkan standar upah perlu dilakukan. Berdasarkan uraian diatas, dibutuhkan sebuah strategi management keuangan yang tepat didalam menetapkan upah/gaji/pendapatan bagi lulusan teknik di India. 
+</p>
   
 > ## Business Understanding
 ### Problem Statements
 <p align="justify">
-Berdasarkan pemaparan sebelumnya, perusahaan membutuhkan sebuah sistem prediksi untuk menetapkan upah/gaji/pendapatan bagi lulusan teknik yang akan dipekerjakan.
+Bagaimana cara pihak penyedia lapangan pekerjaan menetapkan standar upah/gaji/pendapatan lulusan teknik di India?
+Berdasarkan pemaparan sebelumnya, penyedia lapangan pekerjaan membutuhkan sebuah sistem prediksi untuk menetapkan upah/gaji/pendapatan bagi lulusan teknik yang akan dipekerjakan.
 </p>
 
 ### Goals
 <p align="justify">
-Membuat model machine learning regresi, untuk menentukan upah/gaji/pendapatan berdasarkan pekerjaan yang akan ditawarkan.
+Berdasarkan uraian pada bagian problem statement, membuat model machine learning regresi dapat menjadi salah satu solusi untuk menentukan upah/gaji/pendapatan berdasarkan pekerjaan yang akan ditawarkan.
 </p>
 
 
@@ -28,15 +31,15 @@ Membuat model machine learning regresi, untuk menentukan upah/gaji/pendapatan be
 Tujuan proyek ini adalah perusahaan memiliki sebuah sistem prediksi untuk menetapkan upah/gaji/pendapatan bagi lulusan teknik yang akan dipekerjakan berdasarkan data regresi. Model machine learning yang dapat digunakan untuk masalah ini:
 </p>
 
-- K-Nearest Neighbor : algoritma yang relatif sederhana dibandingkan dengan algoritma lain. Algoritma KNN menggunakan ‘kesamaan fitur’ untuk memprediksi nilai dari setiap data yang baru. Dengan kata lain, setiap data baru diberi nilai berdasarkan seberapa mirip titik tersebut dalam set pelatihan. KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Nah, itulah mengapa algoritma ini dinamakan K-nearest neighbor (sejumlah k tetangga terdekat). KNN bisa digunakan untuk kasus klasifikasi dan regresi. Pada modul ini, kita akan menggunakannya untuk kasus regresi.
+- K-Nearest Neighbor : algoritma yang relatif sederhana dibandingkan dengan algoritma lain. Algoritma KNN menggunakan ‘kesamaan fitur’ untuk memprediksi nilai dari setiap data yang baru. Dengan kata lain, setiap data baru diberi nilai berdasarkan seberapa mirip titik tersebut dalam set pelatihan. KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Nah, itulah mengapa algoritma ini dinamakan K-nearest neighbor (sejumlah k tetangga terdekat). KNN bisa digunakan untuk kasus klasifikasi dan regresi. Pada modul ini, kita akan menggunakannya untuk kasus regresi. Meskipun algoritma KNN mudah dipahami dan digunakan, ia memiliki kekurangan jika dihadapkan pada jumlah fitur atau dimensi yang besar. Permasalahan ini sering disebut sebagai curse of dimensionality (kutukan dimensi). Pada dasarnya, permasalahan ini muncul ketika jumlah sampel meningkat secara eksponensial seiring dengan jumlah dimensi (fitur) pada data. Jadi, jika kita ingin menggunakan model KNN, perlu dipastikan data yang digunakan memiliki fitur yang relatif sedikit.
 
-- Random Forest : salah satu algoritma supervised learning. Ia dapat digunakan untuk menyelesaikan masalah klasifikasi dan regresi. Random forest juga merupakan algoritma yang sering digunakan karena cukup sederhana tetapi memiliki stabilitas yang mumpuni. 
+- Random Forest : salah satu algoritma supervised learning. Ia dapat digunakan untuk menyelesaikan masalah klasifikasi dan regresi. Random forest juga merupakan algoritma yang sering digunakan karena cukup sederhana tetapi memiliki stabilitas yang mumpuni. Namun algoritma ini memiliki kekurangan yaitu: pembelajaran bisa berjalan lambat, tergantung pada parameter yang digunakan dan tidak bisa memperbaiki model yang dihasilkan secara berulang.
 
 - Boosting : Algoritma ini merupakan salah satu dari teknik ensemble untuk menghasilkan beberapa model atau penggolongan untuk prediksi atau klasifikasi, dan juga menggabungkan prediksi dari berbagai model ke dalam prediksi tunggal. Boosting adalah pendekatan iteratif untuk menghasilkan pengklasifikasi yang kuat, yang mampu mencapai kesalahan training seminimal mungkin dari sekelompok pengklasifikasi yang lemah, yang masing-masing hampir tidak dapat melakukan lebih baik daripada tebakan acak. Kelebihan dari algoritma ini adalah mampu meningkatkan akurasi model dan bekerja di sebagian besar kasus. Kekurangan algoritma ini adalah Memakan waktu dan dengan demikian mungkin bukan ide terbaik untuk aplikasi real-time, dan pemilihan model untuk menciptakan ensemble adalah seni yang benar-benar sulit untuk dikuasai. 
 
 > ## Data Understanding
-Dataset diperoleh dari [Kaggle](https://www.kaggle.com/). Untuk proyek ini, dataset yang saya pakai yaitu: 
-- https://www.kaggle.com/manishkc06/engineering-graduate-salary-prediction
+Dataset diperoleh dari [Kaggle](https://www.kaggle.com/). ***Kaggle*** merupakan platform penyedia dataset untuk data science. Untuk proyek ini, dataset yang saya pakai yaitu: 
+- [Dataset](https://www.kaggle.com/manishkc06/engineering-graduate-salary-prediction) 
 
 Berikut penjelasan mengenai variabel-variabel pada kolom dataset:
 | Variabel | Deskripsi |
@@ -75,6 +78,12 @@ Berikut penjelasan mengenai variabel-variabel pada kolom dataset:
 | extraversion | Skor di salah satu bagian dari tes kepribadian |
 | nueroticism | Skor di salah satu bagian dari tes kepribadian |
 | openesstoexperience | Skor di salah satu bagian dari tes kepribadian |
+
+Berikut informasi mengenai jumlah data ,tipe data dan informasi data hilang (***missing value***) yang terdapat pada dataset ini:
+<p align="center">
+  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/df-info.png?raw=true"/>
+  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/df-null-check.png?raw=true"/>
+</p>
  
 Dalam memudahkan proses analisis diperlukan beberapa visualisasi data, seperti:  
 - ***sns.boxplot***, untuk mendeteksi adanya data yang berada di luar batas atas dan batas bawah data (***outliers***).
@@ -82,28 +91,48 @@ Dalam memudahkan proses analisis diperlukan beberapa visualisasi data, seperti:
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/collegeGPA-rev.png?raw=true"/>
 </p>
 
-- ***count.plot***, untuk menganalisa fitur.
+> Kita dapat melihat, terdapat titik-titik yang berada di luar range data fitur utama yang menandakan adanya outliers.
+
+
+- ***count.plot***, untuk menganalisa fitur specialization.
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/specialization-rev.png?raw=true"/>
 </p>
 
+> Kita dapat melihat, pada fitur specialization , ***computer enggineering***, ***electronics and communication enggineering*** dan ***information technology*** menjadi bidang dengan serapan tertinggi pada lulusan teknik India didunia pekerjaan.
+
 Penerapan visualisasi data pada gambar diatas, dapat menunjukkan banyaknya jumlah sampel dan persentase pada fitur kategori Specialization.
 
-- ***sns.catplot***, untuk mempertimbangkan Fitur Salary dengan fitur kategorikal, 
+- ***sns.catplot***, untuk mempertimbangkan Fitur Salary dengan fitur kategori, 
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/multivariate-analysis-rev.png?raw=true"/>
 </p>
 
+> Beberapa hal yang dapat kita peroleh dari visualisai informasi tersebut adalah :
+  -
+    - Upah antara pekerja wanita(f) dan pria(m) relatif sama.
+    - Upah yang diperoleh berdasarkan fitur specialization adalah kisaran 15000 - 35000 INR(***Indian Rupee***)
+    - Upah yang diperoleh berdasarkan tempat lulusan teknik berasal relatif sama, namun bila ditetapkan informasi kisaran upah, kisarannya dimulai dari 20000 - 40000 INR(***Indian Rupee***)
+
+<hr>
 
 - ***sns.pairplot***, untuk menunjukkan semua grafik fitur numerik,
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/plot%20pair%20fitur.png?raw=true"/>
 </p>
 
+> **NOTE:** fitur salary terdapat pada bagian paling bawah. Kita belum dapat menarik kesimpulan, dikarenakan sebaran data yang masih acak(***random***)
+
 - ***sns.heatmap***, untuk menunjukkan matrik korelasi fitur numerik.
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/matrik%20korelasi%20fitur%20numerik-a-rev.png?raw=true"/>
 </p>
+
+> Pada visualisasi informasi diatas, dapat disimpulkan bahwa:
+- 
+  - fitur *extraversion* memiliki nilai matrik korelasi cenderung negatif. Namun dapat disimpulkan juga bahwa fitur tersebut juga memiliki matrik korelasi paling lemah dari antara fitur lain yaitu -0.03.
+  - fitur *Quant* memiliki nilai matrik korelasi cenderung positif paling tinggi dari antara fitur lain yaitu 0.3.
+  - Nilai kisaran matrik korelasi dari semua fitur yaitu -0.03 - 0.3. 
 
 Dengan visualisasi data yang telah dilakukan, diharapkan dapat memudahkan kita didalam proses analisa data.
 
@@ -128,23 +157,8 @@ Beberapa langkah yang perlu kita dilakukan sebelum melakukan tahapan Data Prepar
 | CollegeCityTier| Tingkat kota tempat perguruan tinggi berada. Ini dianotasi berdasarkan populasi kota |
 | GraduationYear| Tahun kelulusan (gelar Sarjana)|
  
-Untuk menghilangkan kolom/fitur tersebut dapat dilakukan dengan cara:
-```
-df.drop(
-    ['ID', 'DOB', '10board', '12board', 'CollegeID', 'CollegeTier', 
-     '10percentage','12graduation', '12percentage', 'CollegeCityID', 
-     'CollegeCityTier','Degree','GraduationYear'], 
-    axis='columns', 
-    inplace=True
-)
-```
-> **NOTE:** variabel ***df*** merupakan dataframe.
-
-
 - Melakukan pemeriksaan terhadap nilai yang hilang(missing value) pada dataset 
-```
-df.isnull().sum()
-```
+
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/null-check.png?raw=true"/>
 </p>
@@ -153,23 +167,11 @@ df.isnull().sum()
   - ***Outliers*** adalah sampel yang nilainya sangat jauh dari cakupan umum data utama. Ia adalah hasil pengamatan yang kemunculannya sangat jarang dan berbeda dari data hasil pengamatan lainnya. Kita dapat menangani outliers dengan teknik IQR method.
   - ***IQR*** adalah singkatan dari Inter Quartile Range. Untuk memahami apa itu IQR, dibutuhkan pemahaman terhadap konsep kuartil. Kuartil dari suatu populasi adalah tiga nilai yang membagi distribusi data menjadi empat sebaran. Seperempat dari data berada di bawah kuartil pertama (Q1), setengah dari data berada di bawah kuartil kedua (Q2), dan tiga perempat dari data berada di kuartil ketiga (Q3). Dengan demikian interquartile range atau IQR = Q3 - Q1. Kita dapat menggunakan metode IQR untuk mengidentifikasi outlier yang berada di luar Q1 dan Q3. Nilai apa pun yang berada di luar batas ini dianggap sebagai outlier.
 
-```    
-sns.boxplot(x=df['Logical'])
-```
-
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/Logical-rev.png?raw=true"/>
 </p>
 
-> **NOTE:** Perintah tersebut menampilkan sebuah plot box yang memperlihatkan beberapa titik yang berada di luar range data fitur utama. Untuk mengatasi outlier ini, metode IQR  digunakan dalam analisis statistik untuk membantu menarik kesimpulan mengenai sekumpulan data. Untuk menggunakan metode IQR, dapat menggunakan perintah:
-
-```
-Q1 = df.quantile(0.25)
-Q3 = df.quantile(0.75)
-IQR = Q3-Q1
-df=df[~((df<(Q1-1.5*IQR))|(df>(Q3+1.5*IQR))).any(axis=1)]
-```
-
+> **NOTE:** Pada plot box, memperlihatkan beberapa titik yang berada di luar range data fitur utama. Untuk mengatasi outlier ini, metode IQR  digunakan dalam analisis statistik untuk membantu menarik kesimpulan mengenai sekumpulan data. 
 
 Untuk data preparation, beberapa teknik yang diperlukan yaitu :
 - **One Hot Encoding:** metode ini dilakukan pada fitur kategori karena model machine learning lebih mudah memehami data apabila berupa angka atau biner
@@ -177,29 +179,7 @@ Untuk data preparation, beberapa teknik yang diperlukan yaitu :
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/one-hot-encoding.png?raw=true"/>
 </p>
 
-- **Reduksi dimensi :** Mengurangi fitur atau kolom yang banyak menjadi lebih sedikit dengan tetap mempertahankan informasi pada data tersebut. 
-```
-pca = PCA(n_components=1, random_state=123)
-
-pca.fit(
-    df[['English','Logical','Quant','Domain','ComputerProgramming',
-        'ElectronicsAndSemicon','conscientiousness','agreeableness',
-        'extraversion','nueroticism','openess_to_experience']]
-)
-
-df['AMCATscore'] = pca.transform(
-    df.loc[:, ('English','Logical','Quant','Domain','ComputerProgramming',
-              'ElectronicsAndSemicon','conscientiousness','agreeableness',
-              'extraversion','nueroticism','openess_to_experience')]
-).flatten()
-
-df.drop(
-    ['English','Logical','Quant','Domain','ComputerProgramming',
-      'ElectronicsAndSemicon','conscientiousness','agreeableness',
-      'extraversion','nueroticism','openess_to_experience'],
-      axis=1, inplace=True
-) 
-```
+- **Dimensionality Reduction :** Mengurangi fitur atau kolom yang banyak menjadi lebih sedikit dengan tetap mempertahankan informasi pada data tersebut. 
 
 Pada gambar dibawah ini, terjadi proses reduksi yang semula 11 fitur yang berkaitan menjadi 1 fitur bernama AMCATscore. 
 <p align="center">
@@ -207,22 +187,8 @@ Pada gambar dibawah ini, terjadi proses reduksi yang semula 11 fitur yang berkai
 </p>
 
 - ***Train Test Split*** : Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus kita lakukan sebelum membuat model. 
-```
-X = df.drop(["Salary"], axis=1)
-y = df["Salary"]
-X_train, X_test, y_train, y_test = train_test_split (X, y, test_size = 0.2, random_state=123)
-```
-> **NOTE:** Segala variabel yang digunakan pada contoh kode disesuaikan terhadap dataframe pada dataset yang digunakan
 
 - ***Standarisasi*** : Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses standarisasi dapat membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. 
-```
-numeric_feature = ['collegeGPA', 'AMCATscore']
-scaler = StandardScaler()
-scaler.fit(X_train[numeric_feature])
-X_train[numeric_feature] = scaler.transform(X_train.loc[:, numeric_feature])
-X_train[numeric_feature]
-```
-
 
 > ## Model Development
 > <p align="justify">

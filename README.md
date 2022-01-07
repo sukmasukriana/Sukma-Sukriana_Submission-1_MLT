@@ -217,6 +217,9 @@ KNN = KNeighborsRegressor(n_neighbors=100)
 KNN.fit(X_train, y_train)
 y_pred_KNN = KNN.predict(X_train)
 ```
+
+  >- KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Nah, itulah mengapa algoritma ini dinamakan K-nearest neighbor (sejumlah k tetangga terdekat). Pemilihan nilai k sangat penting dan berpengaruh terhadap performa model. Jika kita memilih k yang terlalu rendah, maka akan menghasilkan model yang overfit dan hasil prediksinya memiliki varians tinggi. Jika kita memilih k terlalu tinggi, maka model yang dihasilkan akan underfit dan prediksinya memiliki bias yang tinggi. Kita dapat mencoba beberapa nilai k yang berbeda, kemudian membandingkan mana nilai yang paling sesuai untuk model. Pada kasus ini, kita akan menetapkan nilai k(n_neighbors) = 100.
+
 - Model prediksi dengan algoritma Random Forest:
 
 ```
@@ -225,17 +228,22 @@ RF.fit(X_train, y_train)
 
 models.loc['train_mse','RandomForest'] = mean_squared_error(y_pred=RF.predict(X_train), y_true=y_train) 
 ```
+   > Berikut merupakan penjelasan terhadap setiap parameter yang digunakan [sumber:](http://learningbox.coffeecup.com/05_2_randomforest.html).
 
 - Model prediksi dengan algoritma Boosting Algorithm - Adaptive Boosting:
 
 ```
 boosting = AdaBoostRegressor(n_estimators=100, learning_rate=0.05, random_state=256)
 boosting.fit(X_train, y_train)
-models.loc['train_mse', 'Boosting'] = mean_squared_error(y_pred=boosting.predict(X_train),
-                                                         y_true=y_train)
+models.loc['train_mse', 'Boosting'] = mean_squared_error(y_pred=boosting.predict(X_train),y_true=y_train)
 ```
+  > Parameter yang akan kita bahas yaitu Learning rate. Learning rate merupakan salah satu parameter training untuk menghitung nilai koreksi bobot pada waktu proses training. Nilai learning rate ini berada pada range nol (0) sampai (1). Semakin besar nilai learning rate, maka proses training akan berjalan semakin cepat. Semakin besar learning rate, maka ketelitian jaringan akan semakin berkurang, tetapi berlaku sebaliknya, apabila learning rate-nya semakin kecil, maka ketelitian jaringan akan semakin besar atau bertambah dengan konsekuensi proses training akan memakan waktu yang semakin lama. Pada kasus ini kita memilih nilai learning_rate = 0.05. 
+  
+  >**NOTE:** Setiap nilai parameter yang kita gunakan masih bersifat percobaan( ***experimental***), sehingga diharapkan bagi kita untuk dapat mengeksplore lebih jauh lagi terhadap setiap nilai yang telah kita gunakan. 
+ 
+ Untuk hasil dari setiap model yang telah kita buat, berikut akan dijelaskan pada tahap Evaluasi.
 
->## Evaluasi
+>## Evaluation
 <p align="justify">
 Mengevaluasi model regresi sebenarnya relatif sederhana. Secara umum, hampir semua metrik adalah sama. Jika prediksi mendekati nilai sebenarnya, performanya baik. Sedangkan jika tidak, performanya buruk. Secara teknis, selisih antara nilai sebenarnya dan nilai prediksi disebut eror. Maka, semua metrik mengukur seberapa kecil nilai eror tersebut.
 </p>
@@ -248,6 +256,7 @@ Metrik yang akan kita gunakan pada prediksi ini adalah MSE atau Mean Squared Err
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/mse.png?raw=true"/>
 </p>
 
+Untuk mengingatkan kembali, kita harus memastikan bahwa tahapan scaling data test/uji sudah dilakukan seperti penjelasan pada tahapan ***Data Preparation***.
 Setelah itu ketiga model bisa di evaluasi dengan metrik MSE. Penggunaan metrik MSE dapat disesuaikan seperti contoh kode program:
 
 ```
@@ -269,9 +278,12 @@ fig, ax = plt.subplots()
 mse.sort_values(by='test', ascending=False).plot(kind='barh', ax=ax, zorder=3)
 ax.grid(zorder=0)
 ```
+
 <p align="center">
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/plot%20metrik%20mse-rev.png?raw=true"/>
 </p>
+
+> Dari gambar di atas, terlihat bahwa model KNN memberikan nilai eror yang paling kecil pada data test/uji dibandingkan model lain. 
 
 - Pengujian model prediksi menggunakan nilai Salary dari dataset:
 

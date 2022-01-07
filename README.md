@@ -305,7 +305,7 @@ for name, model in model_dict.items():
 pd.DataFrame(pred_dict)
 ```
 <p align="center">
-  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/predict-result.png?raw=true"/>
+  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/predict-result-rev.png?raw=true"/>
 </p>
 
 Kita dapat melihat bahwa model dengan algoritma KNN memiliki nilai prediksi (KNN = 308050)  lebih dekat dengan nilai sebenarnya (nilai sebenarnya = 315000) dibandingkan model dengan algoritma random forest (RF = 280280.9) dan boosting (Boosting = 293776.4).

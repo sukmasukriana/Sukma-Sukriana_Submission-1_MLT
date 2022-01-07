@@ -231,11 +231,12 @@ RF.fit(X_train, y_train)
 
 models.loc['train_mse','RandomForest'] = mean_squared_error(y_pred=RF.predict(X_train), y_true=y_train) 
 ```
-   > Berikut merupakan penjelasan terhadap setiap parameter yang digunakan: 
-      - **n_estimators** = menunjukkan jumlah model Decision Tree yang digunakan pada Random Forest
-      - **max_depth** = menunjukkan kedalaman maksimum Decision Tree
-      - **random_state** = mengontrol random number generator yang digunakan. Parameter ini berupa bilangan integer dan nilainya bebas. Parameter ini bertujuan untuk  memastikan bahwa hasil pembagian dataset konsisten dan memberikan data yang sama setiap kali model dijalankan. Jika tidak  ditentukan, maka tiap kali melakukan split, kita akan mendapatkan data train dan tes berbeda. Hal ini berpengaruh terhadap akurasi model ML yang menjadi berbeda tiap kali di-run.
-      - **n_jobs = -1** = jumlah task/pekerjaan yang harus dijalankan secara paralel untuk kecocokan dan prediksi.     
+> Berikut merupakan penjelasan terhadap setiap parameter yang digunakan: 
+  -
+    - **n_estimators** = menunjukkan jumlah model Decision Tree yang digunakan pada Random Forest
+    - **max_depth** = menunjukkan kedalaman maksimum Decision Tree
+    - **random_state** = mengontrol random number generator yang digunakan. Parameter ini berupa bilangan integer dan nilainya bebas. Parameter ini bertujuan untuk  memastikan bahwa hasil pembagian dataset konsisten dan memberikan data yang sama setiap kali model dijalankan. Jika tidak  ditentukan, maka tiap kali melakukan split, kita akan mendapatkan data train dan tes berbeda. Hal ini berpengaruh terhadap akurasi model ML yang menjadi berbeda tiap kali di-run.
+    - **n_jobs = -1** = jumlah task/pekerjaan yang harus dijalankan secara paralel untuk kecocokan dan prediksi.     
 
 - Model prediksi dengan algoritma Boosting Algorithm - Adaptive Boosting:
 

@@ -1,17 +1,16 @@
 # LAPORAN PROYEK MACHINE LEARNING - Adi Putra Sinaga
 
 > ## Domain Proyek
-<p align="justify">
-Teknik merupakan bidang yang mengkombinasikan ilmu dan teknologi untuk menyelesaikan suatu permasalahan. Ada banyak sekali ilmu teknik yang bisa kita pelajari, khususnya jika kita melanjutkan studi pada perguruan tinggi yang memiliki konsentrasi pada bidang ini. Beberapa di antaranya teknik fisika, teknik nuklir, teknik metalurgi, teknik perminyakan, teknik nuklir, teknik penerbangan, teknik perkapalan dan masih banyak lagi. Berbekal keilmuan yang telah diperoleh, pada umumnya penguasaan Ilmu Teknik menjadi nilai jual yang patut dibanggakan. Saat ini, lulusan Ilmu Teknik memiliki prospek kerja yang sangat luas. Hampir seluruh sektor membutuhkan ahli teknik. Jenis dan jenjang karier yang ditawarkan cukup bervariasi. Gajinya pun sangat kompetitif dengan melihat kemampuan dan pengalaman yang dimiliki, area tempat bekerja, serta level yang dimasuki. [QuipperCampus](https://campus.quipper.com/majors/id-ilmu-teknik).
-</p>
 
-<p align="justify">
-Salah satu negara yang memiliki tingkat lulusan pada jurusan teknik tertinggi yaitu India. Negara India memiliki total 6.214 Institusi Teknik dan Teknologi dengan 2,9 juta siswa terdaftar. 1,5 juta siswa setiap tahunnya, mendapatkan gelar di bidang teknik. Kondisi ini tentunya akan memberi bonus demografi bagi negara tersebut. Keterampilan dan kemampuan dibidang teknik tentu harus menyesuaikan dengan pola adaptasi perubahan yang cepat. Namun hanya kurang dari 20 persen lulusan tersebut, memperoleh pekerjaan dibidang teknik disebabkan oleh kurangnya keterampilan yang dibutuhkan untuk melakukan pekerjaan teknis. [BWEDUCATION](http://bweducation.businessworld.in/article/Employability-Of-Engineering-Graduates-In-India-A-Challenge-Needs-To-Address/01-06-2019-171291).
-<p>
+Teknik merupakan bidang yang mengkombinasikan ilmu dan teknologi untuk menyelesaikan suatu permasalahan. Ada banyak sekali ilmu teknik yang bisa kita pelajari, khususnya jika kita melanjutkan studi pada perguruan tinggi yang memiliki konsentrasi pada bidang ini. Beberapa di antaranya teknik fisika, teknik nuklir, teknik metalurgi, teknik perminyakan, teknik nuklir, teknik penerbangan, teknik perkapalan dan masih banyak lagi. Berbekal keilmuan yang telah diperoleh, pada umumnya penguasaan Ilmu Teknik menjadi nilai jual yang patut dibanggakan. Saat ini, lulusan Ilmu Teknik memiliki prospek kerja yang sangat luas. Hampir seluruh sektor membutuhkan ahli teknik. Jenis dan jenjang karier yang ditawarkan cukup bervariasi. Gajinya pun sangat kompetitif dengan melihat kemampuan dan pengalaman yang dimiliki, area tempat bekerja, serta level yang dimasuki ([QuipperCampus](https://campus.quipper.com/majors/id-ilmu-teknik)).
+
+
+
+Salah satu negara yang memiliki tingkat lulusan pada jurusan teknik tertinggi yaitu India. Negara India memiliki total 6.214 Institusi Teknik dan Teknologi dengan 2,9 juta siswa terdaftar. 1,5 juta siswa setiap tahunnya, mendapatkan gelar di bidang teknik. Kondisi ini tentunya akan memberi bonus demografi bagi negara tersebut. Keterampilan dan kemampuan dibidang teknik tentu harus menyesuaikan dengan pola adaptasi perubahan yang cepat. Namun hanya kurang dari 20 persen lulusan tersebut, memperoleh pekerjaan dibidang teknik disebabkan oleh kurangnya keterampilan yang dibutuhkan untuk melakukan pekerjaan teknis ([BWEDUCATION](http://bweducation.businessworld.in/article/Employability-Of-Engineering-Graduates-In-India-A-Challenge-Needs-To-Address/01-06-2019-171291)).
   
-<p align="justify">
-Selain itu, faktor upah/gaji/pendapatan memiliki pengaruh terhadap serapan lulusan teknik di India. Apabila terjadi ketidaksesuaian antara upah yang diterima dengan beban kerja yang dilakukan, maka kemungkinan besar bidang ini tidak memiliki daya tarik lebih, sekalipun Bidang teknologi dan Informasi yang akhir-akhir ini sedang berkembang pesat memberi dampak meningkatnya jumlah lapangan pekerjaan baru [timesofindia.indiatimes](https://timesofindia.indiatimes.com/city/kochi/58-of-engg-grads-get-starting-pay-of-only-around-rs-25k-per-mth/articleshow/69779328.cms). Oleh sebab itu peranan pihak penyedia lapangan pekerjaan didalam menetapkan standar upah perlu dilakukan. Berdasarkan uraian diatas, dibutuhkan sebuah strategi management keuangan yang tepat didalam menetapkan upah/gaji/pendapatan bagi lulusan teknik di India. 
-</p>
+
+Selain itu, faktor upah/gaji/pendapatan memiliki pengaruh terhadap serapan lulusan teknik di India. Apabila terjadi ketidaksesuaian antara upah yang diterima dengan beban kerja yang dilakukan, maka kemungkinan besar bidang ini tidak memiliki daya tarik lebih, sekalipun Bidang teknologi dan Informasi yang akhir-akhir ini sedang berkembang pesat memberi dampak meningkatnya jumlah lapangan pekerjaan baru ([timesofindia.indiatimes](https://timesofindia.indiatimes.com/city/kochi/58-of-engg-grads-get-starting-pay-of-only-around-rs-25k-per-mth/articleshow/69779328.cms)). Oleh sebab itu peranan pihak penyedia lapangan pekerjaan didalam menetapkan standar upah perlu dilakukan. Berdasarkan uraian diatas, dibutuhkan sebuah strategi management keuangan yang tepat didalam menetapkan upah/gaji/pendapatan bagi lulusan teknik di India. 
+
   
 > ## Business Understanding
 ### Problem Statements
@@ -187,8 +186,9 @@ Untuk data preparation, beberapa teknik yang diperlukan yaitu :
 - ***Data Transform***
 
   - ***Scaling:***
+      >   - ***Scaling Data Train (Standarisasi)*** : Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses standarisasi dapat membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. 
       >   - ***Scaling Data Test*** : kita perlu melakukan proses scaling fitur numerik pada data test/uji. Hal ini harus dilakukan agar skala antara data train dan data test sama dan kita bisa melakukan evaluasi.
-      >   - ***Standarisasi*** : Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses standarisasi dapat membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma.   
+  
 
 > ## Modeling
 > <p align="justify">

@@ -288,7 +288,7 @@ ax.grid(zorder=0)
 ```
 
 <p align="center">
-  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/plot%20metrik%20mse-rev.png?raw=true"/>
+  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/mse-model-rev.png?raw=true"/>
 </p>
 
 > Dari gambar di atas, terlihat bahwa model KNN memberikan nilai eror yang paling kecil pada data test/uji dibandingkan model lain. 
@@ -308,11 +308,11 @@ pd.DataFrame(pred_dict)
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/predict-result-rev.png?raw=true"/>
 </p>
 
-Kita dapat melihat bahwa model dengan algoritma KNN memiliki nilai prediksi (KNN = 308050)  lebih dekat dengan nilai sebenarnya (nilai sebenarnya = 315000) dibandingkan model dengan algoritma random forest (RF = 280280.9) dan boosting (Boosting = 293776.4).
+Kita dapat melihat bahwa model dengan algoritma Random Forest memiliki nilai prediksi (RF = 282445.4)  lebih dekat dengan nilai sebenarnya (nilai sebenarnya = 300000) dibandingkan model dengan algoritma KNN (RF = 244700) dan boosting (Boosting = 260123.3).
 
 > ## Kesimpulan
 <p align="justify">
-Pengujian setiap model dengan algoritma yang berbeda menghasilkan nilai prediksi yang berbeda pula. Model dengan nilai yang mendekati nilai sebenarnya diperoleh pada prediksi dengan menggunakan algoritma K-Nearest Neighbor. Untuk prediksi menggunakan algoritma Random Forest dan Boosting, performanya masih dibawah prediksi model KNN. Sehingga dapat disimpulkan bahwa pada kasus ini, model dengan menggunakan Algoritma KNN lebih tepat untuk digunakan atau diterapkan.
+Pengujian setiap model dengan algoritma yang berbeda menghasilkan nilai prediksi yang berbeda pula. Model dengan nilai yang mendekati nilai sebenarnya diperoleh pada prediksi dengan menggunakan algoritma Random Forest. Untuk prediksi menggunakan algoritma K-Nearest Neighbor dan Boosting, performanya masih dibawah prediksi model Random Forest. Sehingga dapat disimpulkan bahwa pada kasus ini, model dengan menggunakan Algoritma Random Forest lebih tepat untuk digunakan atau diterapkan.
 </p>
 
 > ## Penutup

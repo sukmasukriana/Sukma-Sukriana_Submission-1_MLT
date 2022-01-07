@@ -300,6 +300,8 @@ pd.DataFrame(pred_dict)
   <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/predict-result.png?raw=true"/>
 </p>
 
+> Kita dapat melihat bahwa model dengan algoritma KNN memiliki nilai prediksi (nilai prediksi KNN = 308050)  lebih dekat dengan nilai sebenarnya (nilai sebenarnya = 315000).
+
 > ## Kesimpulan
 <p align="justify">
 Pengujian setiap model dengan algoritma yang berbeda menghasilkan nilai prediksi yang berbeda pula. Model dengan nilai yang mendekati nilai sebenarnya diperoleh pada prediksi dengan menggunakan algoritma K-Nearest Neighbor. Untuk prediksi menggunakan algoritma Random Forest dan Boosting, performanya masih dibawah prediksi model KNN. Sehingga dapat disimpulkan bahwa pada kasus ini, model dengan menggunakan Algoritma KNN lebih tepat untuk digunakan atau diterapkan.

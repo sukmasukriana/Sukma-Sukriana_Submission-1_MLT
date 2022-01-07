@@ -241,7 +241,7 @@ models.loc['train_mse','RandomForest'] = mean_squared_error(y_pred=RF.predict(X_
 - Model prediksi dengan algoritma Boosting Algorithm - Adaptive Boosting:
 
 ```
-boosting = AdaBoostRegressor(n_estimators=100, learning_rate=0.05, random_state=256)
+boosting = AdaBoostRegressor(n_estimators=100, learning_rate=0.005, random_state=123)
 boosting.fit(X_train, y_train)
 models.loc['train_mse', 'Boosting'] = mean_squared_error(y_pred=boosting.predict(X_train),y_true=y_train)
 ```

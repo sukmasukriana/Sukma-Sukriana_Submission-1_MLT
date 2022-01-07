@@ -31,7 +31,7 @@ Berdasarkan uraian pada bagian problem statement, membuat model machine learning
 Tujuan proyek ini adalah perusahaan memiliki sebuah sistem prediksi untuk menetapkan upah/gaji/pendapatan bagi lulusan teknik yang akan dipekerjakan berdasarkan data regresi. Model machine learning yang dapat digunakan untuk masalah ini:
 </p>
 
-- K-Nearest Neighbor : algoritma yang relatif sederhana dibandingkan dengan algoritma lain. Algoritma KNN menggunakan ‘kesamaan fitur’ untuk memprediksi nilai dari setiap data yang baru. Dengan kata lain, setiap data baru diberi nilai berdasarkan seberapa mirip titik tersebut dalam set pelatihan. KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Nah, itulah mengapa algoritma ini dinamakan K-nearest neighbor (sejumlah k tetangga terdekat). KNN bisa digunakan untuk kasus klasifikasi dan regresi. Pada modul ini, kita akan menggunakannya untuk kasus regresi. Meskipun algoritma KNN mudah dipahami dan digunakan, ia memiliki kekurangan jika dihadapkan pada jumlah fitur atau dimensi yang besar. Permasalahan ini sering disebut sebagai curse of dimensionality (kutukan dimensi). Pada dasarnya, permasalahan ini muncul ketika jumlah sampel meningkat secara eksponensial seiring dengan jumlah dimensi (fitur) pada data. Jadi, jika kita ingin menggunakan model KNN, perlu dipastikan data yang digunakan memiliki fitur yang relatif sedikit.
+- K-Nearest Neighbor : algoritma yang relatif sederhana dibandingkan dengan algoritma lain. Algoritma KNN menggunakan ‘kesamaan fitur’ untuk memprediksi nilai dari setiap data yang baru. Dengan kata lain, setiap data baru diberi nilai berdasarkan seberapa mirip titik tersebut dalam set pelatihan. KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif). Nah, itulah mengapa algoritma ini dinamakan K-nearest neighbor (sejumlah k tetangga terdekat). KNN bisa digunakan untuk kasus klasifikasi dan regresi. Meskipun algoritma KNN mudah dipahami dan digunakan, ia memiliki kekurangan jika dihadapkan pada jumlah fitur atau dimensi yang besar. Permasalahan ini sering disebut sebagai curse of dimensionality (kutukan dimensi). Pada dasarnya, permasalahan ini muncul ketika jumlah sampel meningkat secara eksponensial seiring dengan jumlah dimensi (fitur) pada data. Jadi, jika kita ingin menggunakan model KNN, perlu dipastikan data yang digunakan memiliki fitur yang relatif sedikit.
 
 - Random Forest : salah satu algoritma supervised learning. Ia dapat digunakan untuk menyelesaikan masalah klasifikasi dan regresi. Random forest juga merupakan algoritma yang sering digunakan karena cukup sederhana tetapi memiliki stabilitas yang mumpuni. Namun algoritma ini memiliki kekurangan yaitu: pembelajaran bisa berjalan lambat, tergantung pada parameter yang digunakan dan tidak bisa memperbaiki model yang dihasilkan secara berulang.
 
@@ -39,7 +39,8 @@ Tujuan proyek ini adalah perusahaan memiliki sebuah sistem prediksi untuk meneta
 
 > ## Data Understanding
 Dataset diperoleh dari [Kaggle](https://www.kaggle.com/). ***Kaggle*** merupakan platform penyedia dataset untuk data science. Untuk proyek ini, dataset yang saya pakai yaitu: 
-- [Dataset](https://www.kaggle.com/manishkc06/engineering-graduate-salary-prediction) 
+- [Dataset](https://www.kaggle.com/manishkc06/engineering-graduate-salary-prediction)
+  > Dataset yang kita gunakan merupakan dataset yang berisi informasi terkait upah/gaji/pendapatan anak lulusan teknik di India. Dataset ini memberikan memaparkan data terkait berbagai faktor seperti nilai perguruan tinggi, keterampilan kandidat, kedekatan perguruan tinggi dengan pusat industri, spesialisasi yang dimiliki, kondisi pasar untuk industri tertentu menentukan upah/gaji/pendapatan anak lulusan teknik di India. 
 
 Berikut penjelasan mengenai variabel-variabel pada kolom dataset:
 | Variabel | Deskripsi |
@@ -183,9 +184,11 @@ Untuk data preparation, beberapa teknik yang diperlukan yaitu :
 
 - ***Train Test Split*** : Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus kita lakukan sebelum membuat model. 
 
-- ***Standarisasi*** : Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses standarisasi dapat membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. 
+- ***Data Transform***
 
-- ***Scaling Data Test*** : kita perlu melakukan proses scaling fitur numerik pada data test/uji. Hal ini harus dilakukan agar skala antara data train dan data test sama dan kita bisa melakukan evaluasi. 
+  - ***Scaling:***
+      >   - ***Scaling Data Test*** : kita perlu melakukan proses scaling fitur numerik pada data test/uji. Hal ini harus dilakukan agar skala antara data train dan data test sama dan kita bisa melakukan evaluasi.
+      >   - ***Standarisasi*** : Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses standarisasi dapat membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma.   
 
 > ## Modeling
 > <p align="justify">
@@ -228,7 +231,11 @@ RF.fit(X_train, y_train)
 
 models.loc['train_mse','RandomForest'] = mean_squared_error(y_pred=RF.predict(X_train), y_true=y_train) 
 ```
-   > Berikut merupakan penjelasan terhadap setiap parameter yang digunakan [sumber:](http://learningbox.coffeecup.com/05_2_randomforest.html).
+   > Berikut merupakan penjelasan terhadap setiap parameter yang digunakan: 
+      - **n_estimators** = menunjukkan jumlah model Decision Tree yang digunakan pada Random Forest
+      - **max_depth** = menunjukkan kedalaman maksimum Decision Tree
+      - **random_state** = mengontrol random number generator yang digunakan. Parameter ini berupa bilangan integer dan nilainya bebas. Parameter ini bertujuan untuk  memastikan bahwa hasil pembagian dataset konsisten dan memberikan data yang sama setiap kali model dijalankan. Jika tidak  ditentukan, maka tiap kali melakukan split, kita akan mendapatkan data train dan tes berbeda. Hal ini berpengaruh terhadap akurasi model ML yang menjadi berbeda tiap kali di-run.
+      - **n_jobs = -1** = jumlah task/pekerjaan yang harus dijalankan secara paralel untuk kecocokan dan prediksi.     
 
 - Model prediksi dengan algoritma Boosting Algorithm - Adaptive Boosting:
 

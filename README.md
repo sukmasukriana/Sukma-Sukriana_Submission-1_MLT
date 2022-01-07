@@ -277,7 +277,7 @@ for name, model in model_dict.items():
 ```
 
 <p align="center">
-  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/mse-model.png?raw=true"/>
+  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/mse-model-rev.png?raw=true"/>
 </p>
 
 - Membuat Plot metrik MSE dengan bar chart:
@@ -288,7 +288,7 @@ ax.grid(zorder=0)
 ```
 
 <p align="center">
-  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/mse-model-rev.png?raw=true"/>
+  <img src="https://github.com/adiputrasinaga-cmd/Predictive-Analytics/blob/main/img/plot%20metrik%20mse-rev.png?raw=true"/>
 </p>
 
 > Dari gambar di atas, terlihat bahwa model KNN memberikan nilai eror yang paling kecil pada data test/uji dibandingkan model lain. 

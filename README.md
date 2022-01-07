@@ -40,7 +40,7 @@ Tujuan proyek ini adalah perusahaan memiliki sebuah sistem prediksi untuk meneta
 > ## Data Understanding
 Dataset diperoleh dari [Kaggle](https://www.kaggle.com/). ***Kaggle*** merupakan platform penyedia dataset untuk data science. Untuk proyek ini, dataset yang saya pakai yaitu: 
 - [Dataset](https://www.kaggle.com/manishkc06/engineering-graduate-salary-prediction)
-  > Dataset yang kita gunakan merupakan dataset yang berisi informasi terkait upah/gaji/pendapatan anak lulusan teknik di India. Dataset ini memberikan memaparkan data terkait berbagai faktor seperti nilai perguruan tinggi, keterampilan kandidat, kedekatan perguruan tinggi dengan pusat industri, spesialisasi yang dimiliki, kondisi pasar untuk industri tertentu menentukan upah/gaji/pendapatan anak lulusan teknik di India. 
+  > Dataset yang kita gunakan merupakan dataset yang berisi informasi terkait upah/gaji/pendapatan anak lulusan teknik di India. Dataset ini berisi data terkait berbagai faktor seperti nilai perguruan tinggi, keterampilan kandidat, kedekatan perguruan tinggi dengan pusat industri, spesialisasi yang dimiliki, kondisi pasar untuk industri tertentu menentukan upah/gaji/pendapatan anak lulusan teknik di India. 
 
 Berikut penjelasan mengenai variabel-variabel pada kolom dataset:
 | Variabel | Deskripsi |

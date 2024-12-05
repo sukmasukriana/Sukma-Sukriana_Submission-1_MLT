@@ -1,4 +1,4 @@
-# LAPORAN PROYEK MACHINE LEARNING - Adi Putra Sinaga
+# LAPORAN PROYEK MACHINE LEARNING - Sukma Sukriana
 
 > ## Domain Proyek
 
